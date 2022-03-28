@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/sdk",
-  "version": "0.0.10-rc.15",
+  "version": "0.0.10-rc.16",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
