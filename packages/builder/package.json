@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/builder",
-  "version": "1.0.8-rc.20",
+  "version": "1.0.8-rc.21",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -21,12 +21,12 @@
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
     "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
-    "commitAndTag": "VERSION=$(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\") git add ./package.json && git commit -m $VERSION && git tag $VERSION"
+    "commitAndTag": "git add ./package.json && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
-    "@adnamas/editor": "1.0.8-rc.11",
-    "@adnamas/sdk": "0.0.10-rc.4",
-    "@adnamas/utils": "1.0.8-rc.15",
+    "@adnamas/editor": "1.0.8-rc.12",
+    "@adnamas/sdk": "0.0.10-rc.5",
+    "@adnamas/utils": "1.0.8-rc.29",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
