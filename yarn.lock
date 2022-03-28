@@ -45,7 +45,7 @@ __metadata:
   dependencies:
     "@adnamas/editor": 1.0.8-rc.10
     "@adnamas/sdk": 0.0.10-rc.3
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -72,7 +72,7 @@ __metadata:
   dependencies:
     "@adnamas/model": 2.1.8-rc.113
     "@adnamas/ui": 1.1.1
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -99,7 +99,7 @@ __metadata:
   dependencies:
     "@adnamas/components": 1.0.5-rc.3
     "@adnamas/model": 2.1.8-rc.113
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -124,7 +124,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/model@workspace:packages/model"
   dependencies:
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -151,7 +151,7 @@ __metadata:
   dependencies:
     "@adnamas/components": 1.0.5-rc.3
     "@adnamas/model": 2.1.8-rc.113
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -176,7 +176,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/ui@workspace:packages/ui"
   dependencies:
-    "@adnamas/utils": 1.0.8-rc.10
+    "@adnamas/utils": 1.0.8-rc.11
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -197,7 +197,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/utils@1.0.8-rc.10, @adnamas/utils@workspace:packages/utils":
+"@adnamas/utils@1.0.8-rc.11, @adnamas/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@adnamas/utils@workspace:packages/utils"
   dependencies:
