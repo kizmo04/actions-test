@@ -28,6 +28,7 @@ jobs:
         cache: 'yarn'
     - run: git config --global init.defaultBranch main
     - run: corepack enable && echo $(yarn -v)
+    - run: yarn plugin remove yarn-plugin-version-tools
 #     - run: yarn plugin import https://github.com/indooorsman/yarn-plugins/releases/download/v1.0.5/plugin-version-tools.js
     - run: yarn plugin import version
     - run: yarn install --frozen-lockfile
