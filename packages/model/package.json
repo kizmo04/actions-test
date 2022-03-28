@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/model",
-  "version": "2.1.8-rc.125",
+  "version": "2.1.8-rc.126",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",

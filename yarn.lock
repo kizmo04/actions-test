@@ -70,7 +70,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/components@workspace:packages/components"
   dependencies:
-    "@adnamas/model": 2.1.8-rc.125
+    "@adnamas/model": 2.1.8-rc.126
     "@adnamas/ui": 1.1.1-rc.11
     "@adnamas/utils": 1.0.8-rc.37
     "@babel/core": ^7.17.8
@@ -98,7 +98,7 @@ __metadata:
   resolution: "@adnamas/editor@workspace:packages/editor"
   dependencies:
     "@adnamas/components": 1.0.5-rc.15
-    "@adnamas/model": 2.1.8-rc.125
+    "@adnamas/model": 2.1.8-rc.126
     "@adnamas/utils": 1.0.8-rc.37
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
@@ -120,7 +120,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/model@2.1.8-rc.125, @adnamas/model@workspace:packages/model":
+"@adnamas/model@2.1.8-rc.126, @adnamas/model@workspace:packages/model":
   version: 0.0.0-use.local
   resolution: "@adnamas/model@workspace:packages/model"
   dependencies:
@@ -150,7 +150,7 @@ __metadata:
   resolution: "@adnamas/sdk@workspace:packages/sdk"
   dependencies:
     "@adnamas/components": 1.0.5-rc.15
-    "@adnamas/model": 2.1.8-rc.125
+    "@adnamas/model": 2.1.8-rc.126
     "@adnamas/utils": 1.0.8-rc.37
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11

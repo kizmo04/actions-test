@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@adnamas/components": "1.0.5-rc.15",
-    "@adnamas/model": "2.1.8-rc.125",
+    "@adnamas/model": "2.1.8-rc.126",
     "@adnamas/utils": "1.0.8-rc.37",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
