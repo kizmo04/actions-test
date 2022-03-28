@@ -1,0 +1,49 @@
+{
+  "name": "@adnamas/editor",
+  "version": "1.0.8-rc.11",
+  "main": "index.js",
+  "packageManager": "yarn@3.2.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "babel-loader": "^8.2.4",
+    "cross-env": "^7.0.3",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack --color --progress",
+    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
+    "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\") && git tag $(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\")"
+  },
+  "dependencies": {
+    "@adnamas/components": "1.0.5-rc.4",
+    "@adnamas/model": "2.1.8-rc.115",
+    "@adnamas/utils": "1.0.8-rc.13",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "terser-webpack-plugin": "^5.3.1",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
