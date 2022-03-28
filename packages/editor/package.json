@@ -21,7 +21,7 @@
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
     "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
-    "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\") && git tag $(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\")"
+    "commitAndTag": "VERSION=$(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\") git add ./package.json && git commit -m $VERSION && git tag $VERSION"
   },
   "dependencies": {
     "@adnamas/components": "1.0.5-rc.4",
