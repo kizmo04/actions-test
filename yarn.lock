@@ -43,6 +43,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/builder@workspace:packages/builder"
   dependencies:
+    "@adnamas/editor": 1.0.8-rc.9
+    "@adnamas/sdk": 0.0.8
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -63,10 +66,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/components@workspace:packages/components":
+"@adnamas/components@1.0.5-rc.2, @adnamas/components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@adnamas/components@workspace:packages/components"
   dependencies:
+    "@adnamas/model": 2.1.8-rc.112
+    "@adnamas/ui": 1.1.1
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -87,10 +93,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/editor@workspace:packages/editor":
+"@adnamas/editor@1.0.8-rc.9, @adnamas/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@adnamas/editor@workspace:packages/editor"
   dependencies:
+    "@adnamas/components": 1.0.5-rc.2
+    "@adnamas/model": 2.1.8-rc.112
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -111,10 +120,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/model@workspace:packages/model":
+"@adnamas/model@2.1.8-rc.112, @adnamas/model@workspace:packages/model":
   version: 0.0.0-use.local
   resolution: "@adnamas/model@workspace:packages/model"
   dependencies:
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -135,11 +145,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/sdk@workspace:packages/sdk":
+"@adnamas/sdk@0.0.8, @adnamas/sdk@workspace:packages/sdk":
   version: 0.0.0-use.local
   resolution: "@adnamas/sdk@workspace:packages/sdk"
   dependencies:
-    "@adnamas/utils": "workspace:^"
+    "@adnamas/components": 1.0.5-rc.2
+    "@adnamas/model": 2.1.8-rc.112
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -160,10 +172,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/ui@workspace:packages/ui":
+"@adnamas/ui@1.1.1, @adnamas/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@adnamas/ui@workspace:packages/ui"
   dependencies:
+    "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -184,7 +197,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/utils@workspace:^, @adnamas/utils@workspace:packages/utils":
+"@adnamas/utils@1.0.8-rc.9, @adnamas/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@adnamas/utils@workspace:packages/utils"
   dependencies:
@@ -2846,7 +2859,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "adnamas@workspace:."
   dependencies:
-    "@adnamas/utils": "workspace:^"
     "@commitlint/cli": ^15.0.0
     "@commitlint/config-conventional": ^15.0.0
     "@types/eslint": ^7

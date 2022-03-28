@@ -1,0 +1,6 @@
+undecided:
+  - adnamas
+  - "@adnamas/builder"
+  - "@adnamas/components"
+  - "@adnamas/editor"
+  - "@adnamas/ui"
