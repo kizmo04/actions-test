@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/utils",
-  "version": "1.0.8-rc.15",
+  "version": "1.0.8-rc.19",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
     "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
-    "commitAndTag": "VERSION=$(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\") git add ./package.json && git commit -m $VERSION && git tag $VERSION",
+    "commitAndTag": "cross-env VERSION=$(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\") git add ./package.json && git commit -m $VERSION && git tag $VERSION",
     "deploy": "yarn npm publish --access public --tolerate-republish"
   },
   "dependencies": {
