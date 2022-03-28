@@ -12,7 +12,7 @@
     "lint:ci": "eslint 'packages/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint 'packages/**/*.{ts,tsx,js,jsx}' --fix",
     "format:fix": "prettier --write ./packages '!**/*.{yml,yaml}'",
-    "prepare:prerelease": "yarn workspaces since run prepare:prerelease $(git rev-parse $(git describe --abbrev=0 --tags))",
+    "prepare:prerelease": "yarn config set changesetBaseRefs $(git rev-parse $(git describe --abbrev=0 --tags)) && yarn workspaces foreach -tv --since run prepare:prerelease",
     "build": "yarn workspaces foreach -ptv --since run build",
     "version:patch": "yarn workspaces since run 'yarn version patch' refs/tags/latest",
     "publish": "yarn workspaces since run 'yarn publish' $(git rev-parse HEAD~1)"
