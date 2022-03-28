@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/second-ui",
-  "version": "1.0.8-rc.11",
+  "version": "1.0.8-rc.12",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "cross-env NODE_ENV=production webpack --color --progress"
+    "build": "cross-env NODE_ENV=production webpack --color --progress",
+    "prerelease": "yarn vt prerelease --preid rc"
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
