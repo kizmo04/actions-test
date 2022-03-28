@@ -45,4 +45,6 @@ jobs:
         tag: v${{ steps.package-version.outputs.current-version }}
 #     - run: git add . && git commit -m v$(yarn node -pe "require('./package.json')['version']")
     - run: yarn npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
