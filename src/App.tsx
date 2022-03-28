@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function App() {
-  return <p>Foo :)</p>;
+  return <p>Foo-2 :)</p>;
 }
