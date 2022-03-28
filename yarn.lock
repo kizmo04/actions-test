@@ -9,6 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/first-ui@workspace:packages/first-ui"
   dependencies:
+    "@adnamas/second-ui": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
@@ -29,7 +30,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/second-ui@workspace:packages/second-ui":
+"@adnamas/second-ui@1.0.8-rc.9, @adnamas/second-ui@workspace:packages/second-ui":
   version: 0.0.0-use.local
   resolution: "@adnamas/second-ui@workspace:packages/second-ui"
   dependencies:

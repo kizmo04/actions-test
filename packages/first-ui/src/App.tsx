@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function App() {
-  return <p>Foo 5 :)</p>;
+  return <p>First UI 1 :)</p>;
 }
