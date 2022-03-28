@@ -12,7 +12,9 @@
     "lint:ci": "eslint 'packages/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint 'packages/**/*.{ts,tsx,js,jsx}' --fix",
     "format:fix": "prettier --write ./packages '!**/*.{yml,yaml}'",
-    "prerelease": "yarn workspaces foreach -tv --since run prerelease",
+    "prerelease": "yarn workspaces foreach -tv --since run version:prerelease",
+    "version:prerelease": "yarn run prerelease && cd ../.. && yarn run commitAndTag",
+    "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\")",
     "build": "yarn workspaces foreach -ptv --since run build",
     "version:patch": "yarn workspaces since run 'yarn version patch' refs/tags/latest",
     "publish": "yarn workspaces since run 'yarn publish' $(git rev-parse HEAD~1)"
@@ -37,13 +39,15 @@
     "@types/react-dom": "^17",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
+    "actions-toolkit": "^6.0.1",
     "eslint": "7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "simple-git": "^3.4.0"
   },
   "dependencies": {
     "next": "^12.0.7",
