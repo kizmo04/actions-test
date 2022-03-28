@@ -44,7 +44,7 @@ __metadata:
   resolution: "@adnamas/builder@workspace:packages/builder"
   dependencies:
     "@adnamas/editor": 1.0.8-rc.9
-    "@adnamas/sdk": 0.0.9
+    "@adnamas/sdk": 0.0.10-rc.1
     "@adnamas/utils": 1.0.8-rc.9
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
@@ -145,7 +145,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/sdk@0.0.9, @adnamas/sdk@workspace:packages/sdk":
+"@adnamas/sdk@0.0.10-rc.1, @adnamas/sdk@workspace:packages/sdk":
   version: 0.0.0-use.local
   resolution: "@adnamas/sdk@workspace:packages/sdk"
   dependencies:
