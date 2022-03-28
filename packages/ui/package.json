@@ -20,7 +20,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
-    "prerelease": "yarn vt prerelease --preid rc"
+    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
+    "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
