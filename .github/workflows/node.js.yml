@@ -36,12 +36,13 @@ jobs:
     - run: yarn vt prerelease --preid rc
 #     - run: yarn version patch
     - name: Get current package version
+      id: package-version
       uses: martinbeentjes/npm-get-version-action@v1.1.0
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.0.0
       with:
-        message: v${{ steps.package-version.outputs.current-version}}
-        tag: v${{ steps.package-version.outputs.current-version}}
+        message: v${{ steps.package-version.outputs.current-version }}
+        tag: v${{ steps.package-version.outputs.current-version }}
 #     - run: git add . && git commit -m v$(yarn node -pe "require('./package.json')['version']")
     - run: yarn npm publish
 
