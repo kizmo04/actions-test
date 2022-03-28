@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/sdk",
-  "version": "0.0.10-rc.13",
+  "version": "0.0.10-rc.14",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -24,9 +24,9 @@
     "commitAndTag": "git add ./package.json && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
-    "@adnamas/components": "1.0.5-rc.13",
-    "@adnamas/model": "2.1.8-rc.124",
-    "@adnamas/utils": "1.0.8-rc.36",
+    "@adnamas/components": "1.0.5-rc.14",
+    "@adnamas/model": "2.1.8-rc.125",
+    "@adnamas/utils": "1.0.8-rc.37",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
