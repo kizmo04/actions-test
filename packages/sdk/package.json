@@ -24,9 +24,9 @@
     "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
-    "@adnamas/components": "1.0.5-rc.2",
-    "@adnamas/model": "2.1.8-rc.112",
-    "@adnamas/utils": "1.0.8-rc.9",
+    "@adnamas/components": "1.0.5-rc.3",
+    "@adnamas/model": "2.1.8-rc.113",
+    "@adnamas/utils": "1.0.8-rc.10",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
