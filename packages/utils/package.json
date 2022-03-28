@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/utils",
-  "version": "1.0.8-rc.8",
+  "version": "1.0.8-rc.9",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
