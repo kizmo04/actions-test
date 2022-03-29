@@ -43,7 +43,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/builder@workspace:packages/builder"
   dependencies:
-    "@adnamas/editor": 1.0.8-rc.22
+    "@adnamas/editor": 1.0.8-rc.23
     "@adnamas/sdk": 0.0.10-rc.17
     "@adnamas/utils": 1.0.8-rc.38
     "@babel/core": ^7.17.8
@@ -93,7 +93,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/editor@1.0.8-rc.22, @adnamas/editor@workspace:packages/editor":
+"@adnamas/editor@1.0.8-rc.23, @adnamas/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@adnamas/editor@workspace:packages/editor"
   dependencies:
