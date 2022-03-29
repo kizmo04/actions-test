@@ -20,7 +20,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
-    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
+    "deploy": "echo publish $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")",
+    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag && yarn run deploy",
     "commitAndTag": "git add ../.. && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
