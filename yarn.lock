@@ -71,7 +71,7 @@ __metadata:
   resolution: "@adnamas/components@workspace:packages/components"
   dependencies:
     "@adnamas/model": 2.1.8-rc.127
-    "@adnamas/ui": 1.1.1-rc.12
+    "@adnamas/ui": 1.1.1-rc.13
     "@adnamas/utils": 1.0.8-rc.38
     "@babel/core": ^7.17.8
     "@babel/preset-env": ^7.16.11
@@ -172,7 +172,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/ui@1.1.1-rc.12, @adnamas/ui@workspace:packages/ui":
+"@adnamas/ui@1.1.1-rc.13, @adnamas/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@adnamas/ui@workspace:packages/ui"
   dependencies:
