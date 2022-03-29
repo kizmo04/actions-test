@@ -66,7 +66,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adnamas/components@1.0.5-rc.15, @adnamas/components@workspace:packages/components":
+"@adnamas/components@1.0.5-rc.16, @adnamas/components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@adnamas/components@workspace:packages/components"
   dependencies:
@@ -97,7 +97,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/editor@workspace:packages/editor"
   dependencies:
-    "@adnamas/components": 1.0.5-rc.15
+    "@adnamas/components": 1.0.5-rc.16
     "@adnamas/model": 2.1.8-rc.126
     "@adnamas/utils": 1.0.8-rc.38
     "@babel/core": ^7.17.8
@@ -149,7 +149,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adnamas/sdk@workspace:packages/sdk"
   dependencies:
-    "@adnamas/components": 1.0.5-rc.15
+    "@adnamas/components": 1.0.5-rc.16
     "@adnamas/model": 2.1.8-rc.126
     "@adnamas/utils": 1.0.8-rc.38
     "@babel/core": ^7.17.8

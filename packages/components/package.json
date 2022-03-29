@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/components",
-  "version": "1.0.5-rc.15",
+  "version": "1.0.5-rc.16",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
