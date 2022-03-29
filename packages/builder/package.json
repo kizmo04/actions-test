@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@adnamas/editor": "1.0.8-rc.23",
-    "@adnamas/sdk": "0.0.10-rc.17",
+    "@adnamas/sdk": "0.0.10-rc.18",
     "@adnamas/utils": "1.0.8-rc.38",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
