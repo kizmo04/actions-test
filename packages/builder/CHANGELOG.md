@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-rc.2](https://personal-github.com/kizmo04/actions-test/compare/@adnamas/builder@1.1.0-rc.1...@adnamas/builder@1.1.0-rc.2) (2022-05-02)
+
 ## [1.1.0-rc.1](https://personal-github.com/kizmo04/actions-test/compare/@adnamas/builder@1.0.8-rc.41...@adnamas/builder@1.1.0-rc.1) (2022-05-02)
 
 ## 1.1.0-rc.0 (2022-05-02)
