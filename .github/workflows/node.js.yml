@@ -31,21 +31,24 @@ jobs:
     - run: corepack enable && echo $(yarn -v)
 #     - run: yarn plugin remove yarn-plugin-version-tools
     - run: yarn plugin import https://github.com/indooorsman/yarn-plugins/releases/download/v1.0.5/plugin-version-tools.js
+    - run: yarn plugin import workspace-tools
+    - run: yarn plugin import https://raw.githubusercontent.com/toss/yarn-plugin-workspace-since/main/bundles/%40yarnpkg/plugin-workspace-since.js
 #     - run: yarn plugin import version
     - run: yarn install --frozen-lockfile
     - run: yarn build
-    - run: yarn vt prerelease --preid rc
+    - run: yarn run prepare:prerelease
+    # - run: yarn vt prerelease --preid rc
 #     - run: yarn version patch
-    - name: Get current package version
-      id: package-version
-      uses: martinbeentjes/npm-get-version-action@v1.1.0
-    - name: Add & Commit
-      uses: EndBug/add-and-commit@v9.0.0
-      with:
-        message: v${{ steps.package-version.outputs.current-version }}
-        tag: v${{ steps.package-version.outputs.current-version }}
+    # - name: Get current package version
+      # id: package-version
+      # uses: martinbeentjes/npm-get-version-action@v1.1.0
+    # - name: Add & Commit
+      # uses: EndBug/add-and-commit@v9.0.0
+      # with:
+        # message: v${{ steps.package-version.outputs.current-version }}
+        # tag: v${{ steps.package-version.outputs.current-version }}
 #     - run: git add . && git commit -m v$(yarn node -pe "require('./package.json')['version']")
-    - run: yarn npm publish --access public --tolerate-republish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    # - run: yarn npm publish --access public --tolerate-republish
+      # env:
+        # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

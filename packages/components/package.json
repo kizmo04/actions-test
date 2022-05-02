@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/components",
-  "version": "1.0.5-rc.4",
+  "version": "1.0.5-rc.18",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -20,13 +20,14 @@
   "scripts": {
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack --color --progress",
-    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag",
-    "commitAndTag": "git add ./package.json && git commit -m v$(yarn node -pe \"require('./package.json')['version']\") && git tag $(yarn node -pe \"require('./package.json')['name']\")@$(yarn node -pe \"require('./package.json')['version']\")"
+    "deploy": "echo publish $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")",
+    "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag && yarn run deploy",
+    "commitAndTag": "git add ../.. && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
-    "@adnamas/model": "2.1.8-rc.115",
-    "@adnamas/ui": "1.1.1-rc.1",
-    "@adnamas/utils": "1.0.8-rc.13",
+    "@adnamas/model": "2.1.8-rc.127",
+    "@adnamas/ui": "1.1.1-rc.15",
+    "@adnamas/utils": "1.0.8-rc.39",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
