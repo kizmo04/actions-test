@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/editor",
-  "version": "1.0.8-rc.25",
+  "version": "1.0.8-rc.26",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
