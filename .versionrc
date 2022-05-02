@@ -1,0 +1,7 @@
+{
+  "bumpFiles": [
+    {
+      "updater": "standard-version-updater.js"
+    }
+  ]
+}
