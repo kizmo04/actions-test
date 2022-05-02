@@ -1,6 +1,6 @@
 {
   "name": "@adnamas/sdk",
-  "version": "0.0.10-rc.19",
+  "version": "0.0.10-rc.20",
   "main": "index.js",
   "packageManager": "yarn@3.2.0",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "build": "cross-env NODE_ENV=production webpack --color --progress",
     "deploy": "echo publish $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")",
     "prepare:prerelease": "yarn vt prerelease --preid rc && yarn run commitAndTag && yarn run deploy",
-    "commitAndTag": "git add ../.. && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
+    "commitAndTag": "git add ../.. && git commit -m $(../../getPackageName.sh) && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
     "@adnamas/components": "1.0.5-rc.18",

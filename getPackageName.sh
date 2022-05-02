@@ -1,0 +1,1 @@
+echo $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")
