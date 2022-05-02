@@ -1,6 +1,6 @@
 {
   "name": "adnamas",
-  "version": "0.0.1-rc.5",
+  "version": "0.0.1",
   "license": "MIT",
   "workspaces": [
     "packages/**/*"
@@ -15,7 +15,8 @@
     "prepare:prerelease": "yarn workspaces since run 'yarn vt prerelease --preid rc && ../../commit_and_tag.sh' $(git rev-parse $(git describe --abbrev=0 --tags))",
     "build": "yarn workspaces foreach -ptv --since run build",
     "version:patch": "yarn workspaces since run 'yarn version patch' refs/tags/latest",
-    "publish": "yarn workspaces since run 'yarn publish' $(git rev-parse HEAD~1)"
+    "publish": "yarn workspaces since run 'exec echo hh' $(git rev-parse HEAD~1)",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
@@ -45,7 +46,8 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
-    "simple-git": "^3.4.0"
+    "simple-git": "^3.4.0",
+    "standard-version": "^9.3.2"
   },
   "dependencies": {
     "next": "^12.0.7",
