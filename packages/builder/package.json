@@ -25,7 +25,7 @@
     "commitAndTag": "git add ../.. && git commit -m $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\") && git tag $(node -pe \"require('./package.json')['name']\")@$(node -pe \"require('./package.json')['version']\")"
   },
   "dependencies": {
-    "@adnamas/editor": "1.0.8-rc.24",
+    "@adnamas/editor": "1.0.8-rc.25",
     "@adnamas/sdk": "0.0.10-rc.21",
     "@adnamas/utils": "1.0.8-rc.39",
     "html-webpack-plugin": "^5.5.0",
