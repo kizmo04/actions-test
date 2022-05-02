@@ -1,7 +1,3 @@
 {
-  "bumpFiles": [
-    {
-      "updater": "standard-version-updater.js"
-    }
-  ]
+  "releaseCommitMessageFormat": "chore(release): $(echo hhh)@{{currentTag}}"
 }
