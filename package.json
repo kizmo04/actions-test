@@ -15,7 +15,7 @@
     "prepare:prerelease": "yarn workspaces since run 'exec standard-version --prerelease rc -t $(../../commit_and_tag.sh)' $(git rev-parse $(git describe --abbrev=0 --tags))",
     "build": "yarn workspaces foreach -ptv --since run build",
     "version:patch": "yarn workspaces since run 'yarn version patch' refs/tags/latest",
-    "publish": "yarn workspaces since run 'exec standard-version --prerelease rc -t $(../../commit_and_tag.sh) --releaseCommitMessageFormat $(../../commit_and_tag.sh){{currentTag}}' $(git rev-parse HEAD~2)",
+    "publish": "yarn workspaces since run 'exec standard-version --prerelease rc -t $(../../commit_and_tag.sh) --releaseCommitMessageFormat $(../../commit_and_tag.sh)@{{currentTag}}' $(git rev-parse HEAD~2)",
     "release:prerelease": "standard-version --prerelease rc -t $(../../commit_and_tag.sh)"
   },
   "husky": {
