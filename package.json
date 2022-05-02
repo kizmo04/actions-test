@@ -1,6 +1,6 @@
 {
   "name": "adnamas",
-  "version": "0.0.12-rc.4",
+  "version": "0.0.12-rc.5",
   "license": "MIT",
   "workspaces": [
     "packages/**/*"

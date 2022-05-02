@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12-rc.5](https://personal-github.com/kizmo04/actions-test/compare/v0.0.12-rc.4...v0.0.12-rc.5) (2022-05-02)
+
 ### [0.0.12-rc.4](https://personal-github.com/kizmo04/actions-test/compare/v0.0.12...v0.0.12-rc.4) (2022-05-02)
 
 ### [0.0.12](https://personal-github.com/kizmo04/actions-test/compare/@scope/package@0.0.12...@scope/package@0.0.12) (2022-05-02)
