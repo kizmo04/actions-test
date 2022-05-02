@@ -1,6 +1,6 @@
 {
   "name": "adnamas",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "workspaces": [
     "packages/**/*"
@@ -46,6 +46,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
+    "semantic-release": "^19.0.2",
     "simple-git": "^3.4.0",
     "standard-version": "^9.3.2"
   },
