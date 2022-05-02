@@ -1,8 +1,0 @@
-undecided:
-  - adnamas
-  - "@adnamas/components"
-  - "@adnamas/editor"
-  - "@adnamas/model"
-  - "@adnamas/sdk"
-  - "@adnamas/ui"
-  - "@adnamas/utils"
