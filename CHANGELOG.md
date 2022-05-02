@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.12-rc.7 (2022-05-02)
+
+
+### Features
+
+* yarn berry react ([09adf61](https://personal-github.com/kizmo04/actions-test/commit/09adf6142a73eecd3ef4905ce4b15e71130d4ae4))
+* zero-install ([68f59ae](https://personal-github.com/kizmo04/actions-test/commit/68f59ae6e24383a1bc598f034d59f90389f85e69))
+
 ### 0.0.12-rc.6 (2022-05-02)
 
 
