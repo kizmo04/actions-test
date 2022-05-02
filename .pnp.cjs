@@ -88,6 +88,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:17.0.2"],\
             ["semantic-release", "npm:19.0.2"],\
+            ["semantic-release-monorepo", "virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:7.0.5"],\
             ["simple-git", "npm:3.4.0"],\
             ["standard-version", "npm:9.3.2"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
@@ -5036,6 +5037,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:17.0.2"],\
             ["semantic-release", "npm:19.0.2"],\
+            ["semantic-release-monorepo", "virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:7.0.5"],\
             ["simple-git", "npm:3.4.0"],\
             ["standard-version", "npm:9.3.2"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
@@ -6672,6 +6674,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["cross-spawn", [\
+        ["npm:5.1.0", {\
+          "packageLocation": "./.yarn/cache/cross-spawn-npm-5.1.0-a3e220603e-726939c995.zip/node_modules/cross-spawn/",\
+          "packageDependencies": [\
+            ["cross-spawn", "npm:5.1.0"],\
+            ["lru-cache", "npm:4.1.5"],\
+            ["shebang-command", "npm:1.2.0"],\
+            ["which", "npm:1.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:6.0.5", {\
           "packageLocation": "./.yarn/cache/cross-spawn-npm-6.0.5-2deab6c280-f893bb0d96.zip/node_modules/cross-spawn/",\
           "packageDependencies": [\
@@ -7770,6 +7782,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["execa", [\
+        ["npm:0.8.0", {\
+          "packageLocation": "./.yarn/cache/execa-npm-0.8.0-7ca41c58fb-c2a4bf6e05.zip/node_modules/execa/",\
+          "packageDependencies": [\
+            ["execa", "npm:0.8.0"],\
+            ["cross-spawn", "npm:5.1.0"],\
+            ["get-stream", "npm:3.0.0"],\
+            ["is-stream", "npm:1.1.0"],\
+            ["npm-run-path", "npm:2.0.2"],\
+            ["p-finally", "npm:1.0.0"],\
+            ["signal-exit", "npm:3.0.7"],\
+            ["strip-eof", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/execa-npm-1.0.0-7028e37029-ddf1342c1c.zip/node_modules/execa/",\
           "packageDependencies": [\
@@ -8256,6 +8282,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["get-stream", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/get-stream-npm-3.0.0-ca0b13ddbe-36142f4600.zip/node_modules/get-stream/",\
+          "packageDependencies": [\
+            ["get-stream", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:4.1.0", {\
           "packageLocation": "./.yarn/cache/get-stream-npm-4.1.0-314d430a5d-443e191417.zip/node_modules/get-stream/",\
           "packageDependencies": [\
@@ -10116,6 +10149,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["lru-cache", [\
+        ["npm:4.1.5", {\
+          "packageLocation": "./.yarn/cache/lru-cache-npm-4.1.5-ede304cc43-4bb4b58a36.zip/node_modules/lru-cache/",\
+          "packageDependencies": [\
+            ["lru-cache", "npm:4.1.5"],\
+            ["pseudomap", "npm:1.0.2"],\
+            ["yallist", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",\
           "packageDependencies": [\
@@ -11713,6 +11755,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["pkg-up", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/pkg-up-npm-2.0.0-d011ba70a4-de4b418175.zip/node_modules/pkg-up/",\
+          "packageDependencies": [\
+            ["pkg-up", "npm:2.0.0"],\
+            ["find-up", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["portfinder", [\
         ["npm:1.0.28", {\
           "packageLocation": "./.yarn/cache/portfinder-npm-1.0.28-12c37407ab-91fef602f1.zip/node_modules/portfinder/",\
@@ -11865,6 +11917,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["pseudomap", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/pseudomap-npm-1.0.2-0d0e40fee0-856c0aae0f.zip/node_modules/pseudomap/",\
+          "packageDependencies": [\
+            ["pseudomap", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["pump", [\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/pump-npm-3.0.0-0080bf6a7a-e42e9229fb.zip/node_modules/pump/",\
@@ -11926,6 +11987,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/quick-lru-npm-4.0.1-ef8aa17c9c-bea46e1abf.zip/node_modules/quick-lru/",\
           "packageDependencies": [\
             ["quick-lru", "npm:4.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ramda", [\
+        ["npm:0.25.0", {\
+          "packageLocation": "./.yarn/cache/ramda-npm-0.25.0-129dea0ea2-008abbcc69.zip/node_modules/ramda/",\
+          "packageDependencies": [\
+            ["ramda", "npm:0.25.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12574,6 +12644,57 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver-diff", "npm:3.1.1"],\
             ["signale", "npm:1.4.0"],\
             ["yargs", "npm:16.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["semantic-release-monorepo", [\
+        ["npm:7.0.5", {\
+          "packageLocation": "./.yarn/cache/semantic-release-monorepo-npm-7.0.5-a0d5a5336b-318d996e09.zip/node_modules/semantic-release-monorepo/",\
+          "packageDependencies": [\
+            ["semantic-release-monorepo", "npm:7.0.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:7.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/semantic-release-monorepo-virtual-7c4c249c1c/0/cache/semantic-release-monorepo-npm-7.0.5-a0d5a5336b-318d996e09.zip/node_modules/semantic-release-monorepo/",\
+          "packageDependencies": [\
+            ["semantic-release-monorepo", "virtual:a0b3df0a926d91127ad9eba264c66fbad6e967a4693139c3453dbf7e6387cc70a06796da4fdb7342f81c236b3cd71d58857be49b6c1c0dc7e5bfa8e6912ad206#npm:7.0.5"],\
+            ["@types/semantic-release", null],\
+            ["debug", "virtual:d9426786c635bc4b52511d6cc4b56156f50d780a698c0e20fc6caf10d3be51cbf176e79cff882f4d42a23ff4d0f89fe94222849578214e7fbae0f2754c82af02#npm:3.2.7"],\
+            ["execa", "npm:0.8.0"],\
+            ["p-limit", "npm:1.3.0"],\
+            ["pkg-up", "npm:2.0.0"],\
+            ["ramda", "npm:0.25.0"],\
+            ["read-pkg", "npm:5.2.0"],\
+            ["semantic-release", "npm:19.0.2"],\
+            ["semantic-release-plugin-decorators", "virtual:7c4c249c1cea97e35d224819705840e3f53ecb852c20b54a4289d2f462c456d7afeefee3fa5b539275c4aa08fc879b4b350c25f08bdddf3ff790f3b077488023#npm:3.0.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["semantic-release-plugin-decorators", [\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/semantic-release-plugin-decorators-npm-3.0.1-0ad95bf1b2-ddb94f90d1.zip/node_modules/semantic-release-plugin-decorators/",\
+          "packageDependencies": [\
+            ["semantic-release-plugin-decorators", "npm:3.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:7c4c249c1cea97e35d224819705840e3f53ecb852c20b54a4289d2f462c456d7afeefee3fa5b539275c4aa08fc879b4b350c25f08bdddf3ff790f3b077488023#npm:3.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/semantic-release-plugin-decorators-virtual-e28fbdc7a6/0/cache/semantic-release-plugin-decorators-npm-3.0.1-0ad95bf1b2-ddb94f90d1.zip/node_modules/semantic-release-plugin-decorators/",\
+          "packageDependencies": [\
+            ["semantic-release-plugin-decorators", "virtual:7c4c249c1cea97e35d224819705840e3f53ecb852c20b54a4289d2f462c456d7afeefee3fa5b539275c4aa08fc879b4b350c25f08bdddf3ff790f3b077488023#npm:3.0.1"],\
+            ["@types/semantic-release", null],\
+            ["semantic-release", "npm:19.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15516,6 +15637,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["yallist", [\
+        ["npm:2.1.2", {\
+          "packageLocation": "./.yarn/cache/yallist-npm-2.1.2-2e38c366a3-9ba9940920.zip/node_modules/yallist/",\
+          "packageDependencies": [\
+            ["yallist", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip/node_modules/yallist/",\
           "packageDependencies": [\
